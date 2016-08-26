@@ -1,6 +1,18 @@
 $(document).ready(function() {
   // Bootstrap Material Design
   $.material.init();
+
+  // Owl initialize
+  $("#owl-recently").owlCarousel({
+    autoPlay: false,
+    stopOnHover: true,
+    navigation: true,
+    paginationSpeed: 1000,
+    goToFirstSpeed: 2000,
+    singleItem: true,
+    autoHeight: true,
+    transitionStyle:"fade"
+  });
 });
 
 var scrollOffset = 60;
@@ -12,6 +24,10 @@ $('a[href=#]').click(function() {
 
 $('a[href=#advisor]').click(function() {
   $('html, body').animate({ scrollTop: $('#advisor').offset().top - scrollOffset }, 'show');
+});
+
+$('a[href=#recently]').click(function() {
+  $('html, body').animate({ scrollTop: $('#recently').offset().top - scrollOffset }, 'show');
 });
 
 $('a[href=#research_contribution]').click(function() {
@@ -56,4 +72,8 @@ $('a[href=#undergraduate_project]').click(function() {
 
   $('.nav-pills>li.active').removeClass('active');
   $(this).parent().addClass('active');
+});
+
+$('.recently').click(function () {
+  var target = $(this).data('target');
 });
