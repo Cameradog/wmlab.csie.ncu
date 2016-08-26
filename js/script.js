@@ -18,10 +18,6 @@ $('a[href=#research_contribution]').click(function() {
   $('html, body').animate({ scrollTop: $('#research_contribution').offset().top - scrollOffset }, 'show');
 });
 
-$('a[href=#related_links]').click(function() {
-  $('html, body').animate({ scrollTop: $('#related_links').offset().top - scrollOffset }, 'show');
-});
-
 $('a[href=#members]').click(function() {
   $('html, body').animate({ scrollTop: $('#members').offset().top - scrollOffset }, 'show');
 });

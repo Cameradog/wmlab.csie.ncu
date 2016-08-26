@@ -21,3 +21,15 @@ body {
 .hidden {
 	display: none;
 }
+
+.img-center {
+	margin: 0 auto;
+}
+
+.img-left {
+	float: left;
+}
+
+.img-right {
+	float: right;
+}
