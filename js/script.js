@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  // Bootstrap Material Design
-  $.material.init();
-
   // Owl initialize
   $("#owl-advisor").owlCarousel({
     autoPlay: true,
