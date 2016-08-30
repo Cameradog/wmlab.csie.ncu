@@ -70,7 +70,3 @@ $('a[href=#undergraduate_project]').click(function() {
   $('.nav-pills>li.active').removeClass('active');
   $(this).parent().addClass('active');
 });
-
-$('.recently').click(function () {
-  var target = $(this).data('target');
-});
