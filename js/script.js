@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // Owl initialize
   $("#owl-advisor").owlCarousel({
-    autoPlay: false,
+    autoPlay: true,
     stopOnHover: true,
     navigation: true,
     paginationSpeed: 1000,
