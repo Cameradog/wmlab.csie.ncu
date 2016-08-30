@@ -3,7 +3,7 @@ $(document).ready(function() {
   $.material.init();
 
   // Owl initialize
-  $("#owl-recently").owlCarousel({
+  $("#owl-advisor").owlCarousel({
     autoPlay: false,
     stopOnHover: true,
     navigation: true,
