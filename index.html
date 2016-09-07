@@ -23,10 +23,11 @@
     <link href="css/owl.transitions.css" rel="stylesheet">
 
     <!-- Nav -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -35,7 +36,7 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#advisor">Advisor</a></li>
+            <li><a href="#advisor" data-toggle="collapse" data-target=".nav-collapse.in">Advisor</a></li>
             <li><a href="#recently">Recently</a></li>
             <li><a href="#research_contribution">Research Contribution</a></li>
             <li class="dropdown">
@@ -72,7 +73,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </head>
   <body>
     <section id="advisor" class="page">

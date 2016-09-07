@@ -70,3 +70,9 @@ $('a[href=#undergraduate_project]').click(function() {
   $('.nav-pills>li.active').removeClass('active');
   $(this).parent().addClass('active');
 });
+
+$('.navbar-responsive-collapse').click(function (e) {
+  if($(e.target).is('a') 
+    && e.target.innerHTML.indexOf('Releated Link') == -1)
+    $(this).removeClass('in'); 
+});
