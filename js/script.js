@@ -1,10 +1,7 @@
 $(document).ready(function() {
-  // Bootstrap Material Design
-  $.material.init();
-
   // Owl initialize
-  $("#owl-recently").owlCarousel({
-    autoPlay: false,
+  $("#owl-advisor").owlCarousel({
+    autoPlay: true,
     stopOnHover: true,
     navigation: true,
     paginationSpeed: 1000,
@@ -30,13 +27,10 @@ $('a[href=#recently]').click(function() {
   $('html, body').animate({ scrollTop: $('#recently').offset().top - scrollOffset }, 'show');
 });
 
-<<<<<<< HEAD
-=======
 $('a[href=#research_contribution]').click(function() {
   $('html, body').animate({ scrollTop: $('#research_contribution').offset().top - scrollOffset }, 'show');
 });
 
->>>>>>> gh-pages
 $('a[href=#members]').click(function() {
   $('html, body').animate({ scrollTop: $('#members').offset().top - scrollOffset }, 'show');
 });
@@ -77,6 +71,8 @@ $('a[href=#undergraduate_project]').click(function() {
   $(this).parent().addClass('active');
 });
 
-$('.recently').click(function () {
-  var target = $(this).data('target');
+$('.navbar-responsive-collapse').click(function (e) {
+  if($(e.target).is('a') 
+    && e.target.innerHTML.indexOf('Releated Link') == -1)
+    $(this).removeClass('in'); 
 });

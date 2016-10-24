@@ -32,8 +32,6 @@ body {
 
 .img-right {
 	float: right;
-<<<<<<< HEAD
-=======
 }
 
 .modal-full {
@@ -61,5 +59,12 @@ body {
 	width: 150px;
 	height: 150px;
 	line-height: 150px;
->>>>>>> gh-pages
+}
+
+.modal {
+	z-index: 1050;
+}
+
+.modal-lg {
+	width: 80%;
 }
